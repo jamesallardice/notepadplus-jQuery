@@ -2,6 +2,11 @@
 
 This project consists of user-defined language files for the <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++ source code editor</a> designed to add code hinting and autocompletion for jQuery methods.
 
+<h2>Screenshots</h2>
+
+<img src="http://www.jamesallardice.com/wp-content/uploads/2011/11/nppp-jq-1.jpg" alt="jQuery autocompletion" />
+<img src="http://www.jamesallardice.com/wp-content/uploads/2011/11/nppp-jq-21.jpg" alt="jQuery code hinting" />
+
 <h2>Installation</h2>
 
 <ul>
