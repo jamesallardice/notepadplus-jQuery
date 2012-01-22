@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NotepadPlus>
+	<AutoComplete>
+		<Environment ignoreCase="no" startFunc="(" stopFunc=")" paramSeparator="," terminal=";" additionalWordChar = ""/>
+		<KeyWord name="add" func="yes">
+			<Overload retVal="jQuery" descr="Add elements to the set of matched elements.&#x0a;&#x0a;selector - A string representing a selector expression to find additional elements to add to the set of matched elements." >
+				<Param name="selector" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Add elements to the set of matched elements.&#x0a;&#x0a;elements - One or more elements to add to the set of matched elements." >
+				<Param name="elements" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Add elements to the set of matched elements.&#x0a;&#x0a;html - An HTML fragment to add to the set of matched elements." >
+				<Param name="html" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Add elements to the set of matched elements.&#x0a;&#x0a;jQuery object - An existing jQuery object to add to the set of matched elements." >
+				<Param name="jQuery object" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Add elements to the set of matched elements.&#x0a;&#x0a;selector - A string representing a selector expression to find additional elements to add to the set of matched elements.&#x0a;&#x0a;context - The point in the document at which the selector should begin matching; similar to the context argument of the $(selector, context) method." >
+				<Param name="selector" />
+				<Param name="context" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="addClass" func="yes">
+			<Overload retVal="jQuery" descr="Adds the specified class(es) to each of the set of matched elements.&#x0a;&#x0a;className - One or more class names to be added to the class attribute of each matched element.">
+				<Param name="className" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Adds the specified class(es) to each of the set of matched elements.&#x0a;&#x0a;function(index, currentClass) - A function returning one or more space-separated class names to be added to the existing class name(s).&#x0a;Receives the index position of the element in the set and the existing class name(s) as arguments.&#x0a;Within the function, this refers to the current element in the set.">
+				<Param name="className" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="after" func="yes">
+			<Overload retVal="jQuery" descr="Insert content, specified by the parameter, after each element in the set of matched elements.&#x0a;&#x0a;content - HTML string, DOM element, or jQuery object to insert after each element in the set of matched elements.&#x0a;&#x0a;content - One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert after each element in the set of matched elements.">
+				<Param name="content [" />
+				<Param name="content]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Insert content, specified by the parameter, after each element in the set of matched elements.&#x0a;&#x0a;function(index) - A function that returns an HTML string, DOM element(s), or jQuery object to insert after each element in the set of matched elements.&#x0a;Receives the index position of the element in the set as an argument. Within the function, this refers to the current element in the set.">
+				<Param name="function(index)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ajax" func="yes">
+			<Overload retVal="jqXHR" descr="Perform an asynchronous HTTP (Ajax) request.&#x0a;&#x0a;url - A string containing the URL to which the request is sent.&#x0a;&#x0a;settings - A set of key/value pairs that configure the Ajax request. All settings are optional. A default can be set for any option with $.ajaxSetup().">
+				<Param name="url [" />
+				<Param name="settings]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ajaxComplete" func="yes">
+			<Overload retVal="jQuery" descr="Register a handler to be called when Ajax requests complete. This is an Ajax Event.&#x0a;&#x0a;handler(event, XMLHttpRequest, ajaxOptions) - The function to be invoked.">
+				<Param name="hander(event, XMLHttpRequest, ajaxOptions)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ajaxError" func="yes">
+			<Overload retVal="jQuery" descr="Register a handler to be called when Ajax requests complete with an error. This is an Ajax Event.&#x0a;&#x0a;handler(event, XMLHttpRequest, ajaxSettings, thrownError) - The function to be invoked.">
+				<Param name="hander(event, XMLHttpRequest, ajaxSettings, thrownError)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ajaxPrefilter" func="yes">
+			<Overload retVal="undefined" descr="Handle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax().&#x0a;&#x0a;dataTypes - An optional string containing one or more space-separated dataTypes&#x0a;&#x0a;handler(options, originalOptions, jqXHR) - A handler to set default values for future Ajax requests.">
+				<Param name="[dataTypes]" />
+				<Param name="handler(options, originalOptions, jqXHR)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ajaxSend" func="yes">
+			<Overload retVal="jQuery" descr="Attach a function to be executed before an Ajax request is sent. This is an Ajax Event.&#x0a;&#x0a;handler(event, jqXHR, ajaxOptions) - The function to be invoked">
+				<Param name="handler(event, jqXHR, ajaxOptions)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ajaxSetup" func="yes">
+			<Overload retVal="undefined" descr="Set default values for future Ajax requests.&#x0a;&#x0a;options - A set of key/value pairs that configure the default Ajax request. All options are optional.">
+				<Param name="options" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ajaxStart" func="yes">
+			<Overload retVal="jQuery" descr="Register a handler to be called when the first Ajax request begins. This is an Ajax Event.&#x0a;&#x0a;handler() - The function to be invoked.">
+				<Param name="handler()" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ajaxStop" func="yes">
+			<Overload retVal="jQuery" descr="Register a handler to be called when all Ajax requests have completed. This is an Ajax Event.&#x0a;&#x0a;handler() - The function to be invoked.">
+				<Param name="handler()" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ajaxSuccess" func="yes">
+			<Overload retVal="jQuery" descr="Attach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event.&#x0a;&#x0a;handler(event, XMLHttpRequest, ajaxOptions) - The function to be invoked.">
+				<Param name="handler(event, XMLHttpRequest, ajaxOptions)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="andSelf" func="yes">
+			<Overload retVal="jQuery" descr="Add the previous set of elements on the stack to the current set.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="animate" func="yes">
+			<Overload retVal="jQuery" descr="Perform a custom animation of a set of CSS properties.&#x0a;&#x0a;properties - A map of CSS properties that the animation will move toward.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;easing - A string indicating which easing function to use for the transition.&#x0a;&#x0a;complete - A function to call once the animation is complete.">
+				<Param name="properties [" />
+				<Param name="duration] [" />
+				<Param name="easing] [" />
+				<Param name="complete]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Perform a custom animation of a set of CSS properties.&#x0a;&#x0a;properties - A map of CSS properties that the animation will move towards.&#x0a;&#x0a;options - A map of additional options to pass the method.">
+				<Param name="properties" />
+				<Param name="options" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="append" func="yes">
+			<Overload retVal="jQuery" descr="Insert content, specified by the parameter, to the end of each element in the set of matched elements.&#x0a;&#x0a;content - DOM element, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.&#x0a;&#x0a;content - One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each&#x0a;element in the set of matched elements.">
+				<Param name="content [" />
+				<Param name="content]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Insert content, specified by the parameter, to the end of each element in the set of matched elements.&#x0a;&#x0a;function(index, html) - A function that returns an HTML string, DOM element(s), or jQuery object to insert at the end of each&#x0a;element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the&#x0a;element as arguments. Within the function, this refers to the current element in the set.">
+				<Param name="function(index, html)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="appendTo" func="yes">
+			<Overload retVal="jQuery" descr="Insert every element in the set of matched elements to the end of the target.&#x0a;&#x0a;target - A selector, element, HTML string, or jQuery object; the matched set of elements will be inserted&#x0a;at the end of the element(s) specified by this parameter.">
+				<Param name="target" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="attr" func="yes">
+			<Overload retVal="String" descr="Get the value of an attribute for the first element in the set of matched elements.&#x0a;&#x0a;attributeName - The name of the attribute to get.">
+				<Param name="attributeName" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set one or more attributes for the set of matched elements.&#x0a;&#x0a;attributeName - The name of the attribute to set.&#x0a;&#x0a;value - A value to set for the attribute">
+				<Param name="attributeName" />
+				<Param name="value" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set one or more attributes for the set of matched elements.&#x0a;&#x0a;map - A map of attribute-value pairs to set.">
+				<Param name="map" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set one or more attributes for the set of matched elements.&#x0a;&#x0a;attributeName - The name of the attribute to set.&#x0a;&#x0a;function(index, attr) - A function returning the value to set. this is the current element. Receives the index&#x0a;position of the element in the set and the old attribute value as arguments.">
+				<Param name="attributeName" />
+				<Param name="function(index, attr)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="before" func="yes">
+			<Overload retVal="jQuery" descr="Insert content, specified by the parameter, before each element in the set of matched elements.&#x0a;&#x0a;content - HTML string, DOM element, or jQuery object to insert before each element in the set of matched elements.&#x0a;&#x0a;content - One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert before&#x0a;each element in the set of matched elements.">
+				<Param name="content [" />
+				<Param name="content]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Insert content, specified by the parameter, before each element in the set of matched elements.&#x0a;&#x0a;function - A function that returns an HTML string, DOM element(s), or jQuery object to insert before each element in the set of matched elements.&#x0a;Receives the index position of the element in the set as an argument. Within the function, this refers to the current element in the set.">
+				<Param name="function" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bind" func="yes">
+			<Overload retVal="jQuery" descr="Attach a handler to an event for the elements.&#x0a;&#x0a;eventType - A string containing one or more DOM event types, such as 'click' or 'submit', or custom event names.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered">
+				<Param name="eventType [" />
+				<Param name="eventData]" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Attach a handler to an event for the elements.&#x0a;&#x0a;eventType - A string containing one or more DOM event types, such as 'click' or 'submit', or custom event names.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;preventBubble - Setting the third argument to false will attach a function that prevents the default action from occurring and stops the event from bubbling. The default is true.">
+				<Param name="eventType [" />
+				<Param name="eventData]" />
+				<Param name="preventBubble" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Attach a handler to an event for the elements.&#x0a;&#x0a;events - A map of one or more DOM event types and functions to execute for them.">
+				<Param name="events" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="blur" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'blur' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'blur' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'blur' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="change" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'change' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'change' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'change' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="children" func="yes">
+			<Overload retVal="jQuery" descr="Get the children of each element in the set of matched elements, optionally filtered by a selector.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.">
+				<Param name="selector" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="clearQueue" func="yes">
+			<Overload retVal="jQuery" descr="Remove from the queue all items that have not yet been run.&#x0a;&#x0a;queueName - A string containing the name of the queue. Defaults to fx, the standard effects queue.">
+				<Param name="[queueName]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="click" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'click' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'click' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'click' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="clone" func="yes">
+			<Overload retVal="jQuery" descr="Create a deep copy of the set of matched elements.&#x0a;&#x0a;withDataAndEvents - A Boolean indicating whether event handlers should be copied along with the elements. As of jQuery 1.4,&#x0a;element data will be copied as well.">
+				<Param name="[withDataAndEvents]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Create a deep copy of the set of matched elements.&#x0a;&#x0a;withDataAndEvents - A Boolean indicating whether event handlers should be copied along with the elements. As of jQuery 1.4,&#x0a;element data will be copied as well.&#x0a;&#x0a;deepWithDataAndEvents - A Boolean indicating whether event handlers and data for all children of the cloned element should be copied.&#x0a;By default its value matches the first argument's value (which defaults to false).">
+				<Param name="[withDataAndEvents] [" />
+				<Param name="deepWithDataAndEvents]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="closest" func="yes">
+			<Overload retVal="jQuery" descr="Get the first element that matches the selector, beginning at the current element and progressing up through the DOM tree.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.">
+				<Param name="selector" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Get the first element that matches the selector, beginning at the current element and progressing up through the DOM tree.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.&#x0a;&#x0a;context - A DOM element within which a matching element may be found. If no context is passed in then the context of the jQuery set will be used instead.">
+				<Param name="selector [" />
+				<Param name="context]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Get the first element that matches the selector, beginning at the current element and progressing up through the DOM tree.&#x0a;&#x0a;jQuery object - A jQuery object to match elements against.">
+				<Param name="jQuery object" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Get the first element that matches the selector, beginning at the current element and progressing up through the DOM tree.&#x0a;&#x0a;element - An element to match elements against.">
+				<Param name="element" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="contains" func="yes">
+			<Overload retVal="Boolean" descr="Check to see if a DOM element is within another DOM element.&#x0a;&#x0a;container - The DOM element that may contain the other element.&#x0a;&#x0a;contained - The DOM element that may be contained by the other element.">
+				<Param name="container" />
+				<Param name="contained" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="contents" func="yes">
+			<Overload retVal="jQuery" descr="Get the children of each element in the set of matched elements, including text and comment nodes.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="context" />
+		<KeyWord name="css" func="yes">
+			<Overload retVal="String" descr="Get the value of a style property for the first element in the set of matched elements.&#x0a;&#x0a;propertyName - A CSS property.">
+				<Param name="propertyName" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set one or more CSS properties for the set of matched elements.&#x0a;&#x0a;propertyName - A CSS property name.&#x0a;&#x0a;value - A value to set for the property.">
+				<Param name="propertyName" />
+				<Param name="value" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set one or more CSS properties for the set of matched elements.&#x0a;&#x0a;propertyName - A CSS property name.&#x0a;&#x0a;function(index, value) - A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as arguments.">
+				<Param name="propertyName" />
+				<Param name="function(index, value)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set one or more CSS properties for the set of matched elements.&#x0a;&#x0a;map - A map of property-value pairs to set.">
+				<Param name="map" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="cssHooks" />
+		<KeyWord name="data" func="yes">
+			<Overload retVal="jQuery" descr="Store arbitrary data associated with the matched elements.&#x0a;&#x0a;key - A string naming the piece of data to set.&#x0a;&#x0a;value - The new data value; it can be any Javascript type including Array or Object.">
+				<Param name="key" />
+				<Param name="value" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Store arbitrary data associated with the matched elements.&#x0a;&#x0a;obj - An object of key-value pairs of data to update.">
+				<Param name="obj" />
+			</Overload>
+			<Overload retVal="Object" descr="Returns value at named data store for the first element in the jQuery collection, as set by data(name, value).&#x0a;&#x0a;key - Name of the data stored.">
+				<Param name="key" />
+			</Overload>
+			<Overload retVal="Object" descr="Returns value at named data store for the first element in the jQuery collection, as set by data(name, value).">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="dblclick" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'dblclick' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'dblclick' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'dblclick' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="delay" func="yes">
+			<Overload retVal="jQuery" descr="Set a timer to delay execution of subsequent items in the queue.&#x0a;&#x0a;duration - An integer indicating the number of milliseconds to delay execution of the next item in the queue.&#x0a;&#x0a;queueName - A string containing the name of the queue. Defaults to fx, the standard effects queue.">
+				<Param name="duration [" />
+				<Param name="queueName]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="delegate" func="yes">
+			<Overload retVal="jQuery" descr="Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.&#x0a;&#x0a;selector - A selector to filter the elements that trigger the event.&#x0a;&#x0a;eventType - A string containing one or more space-separated JavaScript event types, such as 'click' or 'keydown', or custom event names.&#x0a;&#x0a;handler - A function to execute at the time the event is triggered.">
+				<Param name="selector" />
+				<Param name="eventType" />
+				<Param name="handler" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.&#x0a;&#x0a;selector - A selector to filter the elements that trigger the event.&#x0a;&#x0a;eventType - A string containing one or more space-separated JavaScript event types, such as 'click' or 'keydown', or custom event names.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler - A function to execute at the time the event is triggered.">
+				<Param name="selector" />
+				<Param name="eventType" />
+				<Param name="eventData" />
+				<Param name="handler" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.&#x0a;&#x0a;selector - A selector to filter the elements that trigger the event.&#x0a;&#x0a;events - A map of one or more event types and functions to execute for them.">
+				<Param name="selector" />
+				<Param name="events" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="dequeue" func="yes">
+			<Overload retVal="jQuery" descr="Execute the next function on the queue for the matched elements.&#x0a;&#x0a;queueName - A string containing the name of the queue. Defaults to fx, the standard effects queue.">
+				<Param name="[queueName]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="detach" func="yes">
+			<Overload retVal="jQuery" descr="Remove the set of matched elements from the DOM.&#x0a;&#x0a;selector - A selector expression that filters the set of matched elements to be removed.">
+				<Param name="[selector]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="each" func="yes">
+			<Overload retVal="jQuery" descr="Iterate over a jQuery object, executing a function for each matched element.&#x0a;&#x0a;function(index, Element) - A function to execute for each matched element.">
+				<Param name="function(index, Element)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="empty" func="yes">
+			<Overload retVal="jQuery" descr="Remove all child nodes of the set of matched elements from the DOM.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="end" func="yes">
+			<Overload retVal="jQuery" descr="End the most recent filtering operation in the current chain and return the set of matched elements to its previous state.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="eq" func="yes">
+			<Overload retVal="jQuery" descr="Reduce the set of matched elements to the one at the specified index.&#x0a;&#x0a;index - An integer indicating the 0-based position of the element.">
+				<Param name="index" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Reduce the set of matched elements to the one at the specified index.&#x0a;&#x0a;-index - An integer indicating the position of the element, counting backwards from the last element in the set.">
+				<Param name="-index" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="error" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'error' JavaScript event.&#x0a;&#x0a;handler(eventObject) - A function to execute when the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'error' JavaScript event.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute when the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="extend" func="yes">
+			<Overload retVal="Object" descr="Merge the contents of two or more objects together into the first object.&#x0a;&#x0a;target - An object that will receive the new properties if additional objects are passed in or that will extend the jQuery namespace if it is the sole argument.&#x0a;&#x0a;object1 - An object containing additional properties to merge in.&#x0a;&#x0a;objectN - Additional objects containing properties to merge in.">
+				<Param name="target [" />
+				<Param name="object1] [" />
+				<Param name="objectN]" />
+			</Overload>
+			<Overload retVal="Object" descr="Merge the contents of two or more objects together into the first object.&#x0a;&#x0a;deep - If true, the merge becomes recursive (aka. deep copy).&#x0a;&#x0a;target - The object to extend. It will receive the new properties.&#x0a;&#x0a;object1 - An object containing additional properties to merge in.&#x0a;&#x0a;objectN - Additional objects containing properties to merge in.">
+				<Param name="deep" />
+				<Param name="target" />
+				<Param name="object1" />
+				<Param name="objectN" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fadeIn" func="yes">
+			<Overload retVal="jQuery" descr="Display the matched elements by fading them to opaque.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="[duration] [" />
+				<Param name="callback]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Display the matched elements by fading them to opaque.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;easing - A string indicating which easing function to use for the transition.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="[duration] [" />
+				<Param name="easing] [" />
+				<Param name="callback]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fadeOut" func="yes">
+			<Overload retVal="jQuery" descr="Hide the matched elements by fading them to transparent.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="duration" />
+				<Param name="callback" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Hide the matched elements by fading them to transparent.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;easing - A string indicating which easing function to use for the transition.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="duration" />
+				<Param name="easing" />
+				<Param name="callback" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fadeTo" func="yes">
+			<Overload retVal="jQuery" descr="Adjust the opacity of the matched elements.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;opacity - A number between 0 and 1 denoting the target opacity.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="duration" />
+				<Param name="opactiy" />
+				<Param name="callback" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Adjust the opacity of the matched elements.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;opacity - A number between 0 and 1 denoting the target opacity.&#x0a;&#x0a;easing - A string indicating which easing function to use for the transition.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="duration" />
+				<Param name="opacity" />
+				<Param name="easing" />
+				<Param name="callback" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fadeToggle" func="yes">
+			<Overload retVal="jQuery" descr="Display or hide the matched elements by animating their opacity.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;easing - A string indicating which easing function to use for the transition.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="duration" />
+				<Param name="easing" />
+				<Param name="callback" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="filter" func="yes">
+			<Overload retVal="jQuery" descr="Reduce the set of matched elements to those that match the selector or pass the function's test.&#x0a;&#x0a;selector - A string containing a selector expression to match the current set of elements against.">
+				<Param name="selector" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Reduce the set of matched elements to those that match the selector or pass the function's test.&#x0a;&#x0a;function(index) - A function used as a test for each element in the set. this is the current DOM element.">
+				<Param name="function(index)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Reduce the set of matched elements to those that match the selector or pass the function's test.&#x0a;&#x0a;element - An element to match the current set of elements against.">
+				<Param name="element" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Reduce the set of matched elements to those that match the selector or pass the function's test.&#x0a;&#x0a;jQuery object - An existing jQuery object to match the current set of elements against.">
+				<Param name="jQuery object" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="find" func="yes">
+			<Overload retVal="jQuery" descr="Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.">
+				<Param name="selector" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.&#x0a;&#x0a;jQuery object - A jQuery object to match elements against.">
+				<Param name="jQuery object" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.&#x0a;&#x0a;element - An element to match elements against.">
+				<Param name="element" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="first" func="yes">
+			<Overload retVal="jQuery" descr="Reduce the set of matched elements to the first in the set.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="focus" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'focus' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'focus' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'focus' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="focusin" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'focusin' event.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'focusin' event.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="focusout" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'focusout' JavaScript event.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'focusout' JavaScript event.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="get" func="yes">
+			<Overload retVal="Element, Array" descr="Retrieve the DOM elements matched by the jQuery object.&#x0a;&#x0a;index - A zero-based integer indicating which element to retrieve.">
+				<Param name="[index]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getJSON" func="yes">
+			<Overload retVal="jqXHR" descr="Load JSON-encoded data from the server using a GET HTTP request.&#x0a;&#x0a;url - A string containing the URL to which the request is sent.&#x0a;&#x0a;data - A map or string that is sent to the server with the request.&#x0a;&#x0a;succsss(data, textStatus, jqXHR) - A callback function that is executed if the request succeeds.">
+				<Param name="url [" />
+				<Param name="data] [" />
+				<Param name="success(data, textStatus, jqXHR)]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getScript" func="yes">
+			<Overload retVal="jqXHR" descr="Load a JavaScript file from the server using a GET HTTP request, then execute it.&#x0a;&#x0a;url - A string containing the URL to which the request is sent.&#x0a;&#x0a;success(data, textStatus) - A callback function that is executed if the request succeeds.">
+				<Param name="url [" />
+				<Param name="success(data, textStatus)]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="globalEval" func="yes">
+			<Overload retVal="undefined" descr="Execute some JavaScript code globally.&#x0a;&#x0a;code - The JavaScript code to execute.">
+				<Param name="code" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="grep" func="yes">
+			<Overload retVal="Array" descr="Finds the elements of an array which satisfy a filter function. The original array is not affected.&#x0a;&#x0a;array - The array to search through.&#x0a;&#x0a;function(elementOfArray, indexInArray) - The function to process each item against. The first argument to the function is the item, and&#x0a;the second argument is the index. The function should return a Boolean value. this will be the global window object.&#x0a;&#x0a;invert - If 'invert' is false, or not provided, then the function returns an array consisting of all elements for which 'callback' returns true.&#x0a;If 'invert' is true, then the function returns an array consisting of all elements for which 'callback' returns false.">
+				<Param name="array" />
+				<Param name="function(elementOfArray, indexInArray) [" />
+				<Param name="invert]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="has" func="yes">
+			<Overload retVal="jQuery" descr="Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.">
+				<Param name="selector" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.&#x0a;&#x0a;contained - A DOM element to match elements against.">
+				<Param name="contained" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="hasClass" func="yes">
+			<Overload retVal="Boolean" descr="Determine whether any of the matched elements are assigned the given class.&#x0a;&#x0a;className - The class name to search for.">
+				<Param name="className" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="hasData" func="yes">
+			<Overload retVal="Boolean" descr="Determine whether an element has any jQuery data associated with it.&#x0a;&#x0a;element - A DOM element to be checked for data.">
+				<Param name="element" />
+			</Overload>			
+		</KeyWord>
+		<KeyWord name="height" func="yes">
+			<Overload retVal="Integer" descr="Get the current computed height for the first element in the set of matched elements.">
+				<Param name="" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set the CSS height of every matched element.&#x0a;&#x0a;value - An integer representing the number of pixels, or an integer with an optional unit of measure appended (as a string).">
+				<Param name="value" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set the CSS height of every matched element.&#x0a;&#x0a;function(index, height) - A function returning the height to set. Receives the index position of the element in the set and&#x0a;the old height as arguments. Within the function, this refers to the current element in the set.">
+				<Param name="value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="hide" func="yes">
+			<Overload retVal="jQuery" descr="Hide the matched elements.">
+				<Param name="" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Hide the matched elements.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="duration [" />
+				<Param name="callback]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Hide the matched elements.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;easing - A string indicating which easing function to use for the transition.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="[duration] [" />
+				<Param name="easing] [" />
+				<Param name="callback]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="holdReady" func="yes">
+			<Overload retVal="undefined" descr="Holds or releases the execution of jQuery's ready event.&#x0a;&#x0a;hold - Indicates whether the ready hold is being requested or released">
+				<Param name="hold" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="hover" func="yes">
+			<Overload retVal="jQuery" descr="Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.&#x0a;&#x0a;handlerIn(eventObject) - A function to execute when the mouse pointer enters the element.&#x0a;&#x0a;handlerOut(eventObject) - A function to execute when the mouse pointer leaves the element.">
+				<Param name="handlerIn(eventObject)" />
+				<Param name="handlerOut(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind a single handler to the matched elements, to be executed when the mouse pointer enters or leaves the elements.&#x0a;&#x0a;handlerIn(eventObject) - A function to execute when the mouse pointer enters or leaves the element.">
+				<Param name="handlerInOut(eventObject)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="html" func="yes">
+			<Overload retVal="String" descr="Get the HTML contents of the first element in the set of matched elements.">
+				<Param name="" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set the HTML contents of each element in the set of matched elements.&#x0a;&#x0a;htmlString - A string of HTML to set as the content of each matched element.">
+				<Param name="htmlString" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set the HTML contents of each element in the set of matched elements.&#x0a;&#x0a;function(index, oldhtml) - A function returning the HTML content to set. Receives the index position of the element in the set and the old&#x0a;HTML value as arguments. jQuery empties the element before calling the function; use the oldhtml argument&#x0a;to reference the previous content. Within the function, this refers to the current element in the set.">
+				<Param name="htmlString" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="inArray" func="yes">
+			<Overload retVal="Number" descr="Search for a specified value within an array and return its index (or -1 if not found).&#x0a;&#x0a;value - The value to search for.&#x0a;&#x0a;array - An array through which to search.&#x0a;&#x0a;fromIndex - The index of the array at which to begin the search. The default is 0, which will search the whole array.">
+				<Param name="value" />
+				<Param name="array [" />
+				<Param name="fromIndex]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="index" func="yes">
+			<Overload retVal="Number" descr="Search for a given element from among the matched elements.">
+				<Param name="" />
+			</Overload>
+			<Overload retVal="Number" descr="Search for a given element from among the matched elements.&#x0a;&#x0a;selector - A selector representing a jQuery collection in which to look for an element.">
+				<Param name="selector" />
+			</Overload>
+			<Overload retVal="Number" descr="Search for a given element from among the matched elements.&#x0a;&#x0a;element - The DOM element or first element within the jQuery object to look for.">
+				<Param name="element" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="innerHeight" func="yes">
+			<Overload retVal="Integer" descr="Get the current computed height for the first element in the set of matched elements, including padding but not border.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="innerWidth" func="yes">
+			<Overload retVal="Integer" descr="Get the current computed width for the first element in the set of matched elements, including padding but not border.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="insertAfter" func="yes">
+			<Overload retVal="jQuery" descr="Insert every element in the set of matched elements after the target.&#x0a;&#x0a;target - A selector, element, HTML string, or jQuery object; the matched set of elements will be inserted after the element(s) specified by this parameter.">
+				<Param name="target" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="insertBefore" func="yes">
+			<Overload retVal="jQuery" descr="Insert every element in the set of matched elements before the target.&#x0a;&#x0a;target - A selector, element, HTML string, or jQuery object; the matched set of elements will be inserted before the element(s) specified by this parameter.">
+				<Param name="target" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is" func="yes">
+			<Overload retVal="Boolean" descr="Check the current matched set of elements against a selector, element, or jQuery object and return true&#x0a;if at least one of these elements matches the given arguments.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.">
+				<Param name="selector" />
+			</Overload>
+			<Overload retVal="Boolean" descr="Check the current matched set of elements against a selector, element, or jQuery object and return true&#x0a;if at least one of these elements matches the given arguments.&#x0a;&#x0a;function(index) - A function used as a test for the set of elements. It accepts one argument, index, which is the element's&#x0a;index in the jQuery collection.Within the function, this refers to the current DOM element.">
+				<Param name="selector" />
+			</Overload>
+			<Overload retVal="Boolean" descr="Check the current matched set of elements against a selector, element, or jQuery object and return true&#x0a;if at least one of these elements matches the given arguments.&#x0a;&#x0a;jQuery object - An existing jQuery object to match the current set of elements against.">
+				<Param name="jQuery object" />
+			</Overload>
+			<Overload retVal="Boolean" descr="Check the current matched set of elements against a selector, element, or jQuery object and return true&#x0a;if at least one of these elements matches the given arguments.&#x0a;&#x0a;element - An existing jQuery object to match the current set of elements against.">
+				<Param name="element" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isArray" func="yes">
+			<Overload retVal="Boolean" descr="Determine whether the argument is an array.&#x0a;&#x0a;Object to test whether or not it is an array.">
+				<Param name="obj" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isEmptyObject" func="yes">
+			<Overload retVal="Boolean" descr="Check to see if an object is empty (contains no properties).&#x0a;&#x0a;object - The object that will be checked to see if it's empty.">
+				<Param name="object" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isFunction" func="yes">
+			<Overload retVal="Boolean" descr="Determine if the argument passed is a Javascript function object.&#x0a;&#x0a;obj - Object to test whether or not it is a function.">
+				<Param name="obj" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isNumeric" func="yes">
+			<Overload retVal="Boolean" descr="Determines whether its argument is a number.&#x0a;&#x0a;value - The value to be tested.">
+				<Param name="value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isPlainObject" func="yes">
+			<Overload retVal="Boolean" descr="Check to see if an object is a plain object (created using '{}' or 'new Object').&#x0a;&#x0a;object - The object that will be checked to see if it's a plain object.">
+				<Param name="object" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isWindow" func="yes">
+			<Overload retVal="Boolean" descr="Determine whether the argument is a window.&#x0a;&#x0a;obj - Object to test whether or not it is a window.">
+				<Param name="obj" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isXMLDoc" func="yes">
+			<Overload retVal="Boolean" descr="Check to see if a DOM node is within an XML document (or is an XML document).&#x0a;&#x0a;node - The DOM node that will be checked to see if it's in an XML document.">
+				<Param name="node" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="keydown" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'keydown' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'keydown' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'keydown' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="keypress" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'keypress' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'keypress' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'keypress' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="keyup" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'keyup' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'keyup' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'keyup' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="last" func="yes">
+			<Overload retVal="jQuery" descr="Reduce the set of matched elements to the final one in the set.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="load" func="yes">
+			<Overload retVal="jQuery" descr="Load data from the server and place the returned HTML into the matched element.&#x0a;&#x0a;url - A string containing the URL to which the request is sent.&#x0a;&#x0a;data - A map or string that is sent to the server with the request.&#x0a;&#x0a;complete(responseText, textStatus, XMLHttpRequest) - A callback function that is executed when the request completes.">
+				<Param name="url [" />
+				<Param name="data] [" />
+				<Param name="complete(responseText, textStatus, XMLHttpRequest)]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'load' JavaScript event.&#x0a;&#x0a;handler(eventObject) - A function to execute when the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'load' JavaScript event.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute when the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makeArray" func="yes">
+			<Overload retVal="Array" descr="Convert an array-like object into a true JavaScript array.&#x0a;&#x0a;obj - Any object to turn into a native Array.">
+				<Param name="obj" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="map" func="yes">
+			<Overload retVal="jQuery" descr="Pass each element in the current matched set through a function, producing a new jQuery object containing the return values.&#x0a;&#x0a;callback(index, domElement) - A function object that will be invoked for each element in the current set.">
+				<Param name="callback(index, domElement)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="merge" func="yes">
+			<Overload retVal="Array" descr="Merge the contents of two arrays together into the first array.&#x0a;&#x0a;first - The first array to merge, the elements of second added.&#x0a;&#x0a;second - The second array to merge into the first, unaltered.">
+				<Param name="first" />
+				<Param name="second" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mousedown" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mousedown' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mousedown' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="[eventData]" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mousedown' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mouseenter" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseenter' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseenter' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="[eventData]" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseenter' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mouseleave" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseleave' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseleave' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="[eventData]" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseleave' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mousemove" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mousemove' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mousemove' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="[eventData]" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mousemove' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mouseout" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseout' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseout' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="[eventData]" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseout' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mouseover" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseover' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseover' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="[eventData]" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseover' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mouseup" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseup' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseup' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="[eventData]" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'mouseup' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="next" func="yes">
+			<Overload retVal="jQuery" descr="Get the immediately following sibling of each element in the set of matched elements. If a selector is&#x0a;provided, it retrieves the next sibling only if it matches that selector.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.">
+				<Param name="[selector]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="nextAll" func="yes">
+			<Overload retVal="jQuery" descr="Get all following siblings of each element in the set of matched elements, optionally filtered by a selector.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.">
+				<Param name="[selector]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="nextUntil" func="yes">
+			<Overload retVal="jQuery" descr="Get all following siblings of each element up to but not including the element matched by the selector,&#x0a;DOM node, or jQuery object passed.&#x0a;&#x0a;selector - A string containing a selector expression to indicate where to stop matching following sibling elements.&#x0a;&#x0a;filter - A string containing a selector expression to match elements against.">
+				<Param name="[selector] [" />
+				<Param name="filter]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Get all following siblings of each element up to but not including the element matched by the selector,&#x0a;DOM node, or jQuery object passed.&#x0a;&#x0a;element - A DOM node or jQuery object indicating where to stop matching following sibling elements.&#x0a;&#x0a;filter - A string containing a selector expression to match elements against.">
+				<Param name="[element] [" />
+				<Param name="filter]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="noConflict" func="yes">
+			<Overload retVal="Object" descr="Relinquish jQuery's control of the $ variable.&#x0a;&#x0a;removeAll - A Boolean indicating whether to remove all jQuery variables from the global scope (including jQuery itself).">
+				<Param name="[removeAll]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="noop" func="yes">
+			<Overload retVal="Function" descr="An empty function.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="not" func="yes">
+			<Overload retVal="jQuery" descr="Remove elements from the set of matched elements.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.">
+				<Param name="selector" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Remove elements from the set of matched elements.&#x0a;&#x0a;elements - One or more DOM elements to remove from the matched set.">
+				<Param name="elements" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Remove elements from the set of matched elements.&#x0a;&#x0a;function(index) - A function used as a test for each element in the set. this is the current DOM element.">
+				<Param name="function(index)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="now" func="yes">
+			<Overload retVal="Number" descr="Return a number representing the current time.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="off" func="yes">
+			<Overload retVal="jQuery" descr="Remove an event handler.&#x0a;&#x0a;events - One or more space-separated event types and optional namespaces, or just namespaces, such as 'click', 'keydown.myPlugin', or '.myPlugin'.&#x0a;&#x0a;selector - A selector which should match the one originally passed to .on() when attaching event handlers.&#x0a;&#x0a;handler - A handler function previously attached for the event(s), or the special value false.">
+				<Param name="events [" />
+				<Param name="selector] [" />
+				<Param name="handler]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Remove an event handler.&#x0a;&#x0a;events-map - A map where the string keys represent one or more space-separated event types and optional namespaces, and the values represent&#x0a;handler functions previously attached for the event(s).&#x0a;&#x0a;selector - A selector which should match the one originally passed to .on() when attaching event handlers.">
+				<Param name="events-map [" />
+				<Param name="selector]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="offset" func="yes">
+			<Overload retVal="Object" descr="Get the current coordinates of the first element in the set of matched elements, relative to the document.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="offsetParent" func="yes">
+			<Overload retVal="jQuery" descr="Get the closest ancestor element that is positioned.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="on" func="yes">
+			<Overload retVal="jQuery" descr="Attach an event handler function for one or more events to the selected elements.&#x0a;&#x0a;events - One or more space-separated event types and optional namespaces, such as 'click' or 'keydown.myPlugin'.&#x0a;&#x0a;selector - A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the&#x0a;event is always triggered when it reaches the selected element.&#x0a;&#x0a;data - Data to be passed to the handler in event.data when an event is triggered.&#x0a;&#x0a;handler - A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that&#x0a;simply does return false.">
+				<Param name="events [" />
+				<Param name="selector] [" />
+				<Param name="data] [" />
+				<Param name="handler]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Attach an event handler function for one or more events to the selected elements.&#x0a;&#x0a;events-map - A map where the string keys represent one or more space-separated event types and optional namespaces, and the values represent&#x0a; a handler function to be called for the event(s).&#x0a;&#x0a;selector - A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the&#x0a;handler is always called when it reaches the selected element.&#x0a;&#x0a;data - Data to be passed to the handler in event.data when an event occurs.">
+				<Param name="events-map [" />
+				<Param name="selector] [" />
+				<Param name="data]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="one" func="yes">
+			<Overload retVal="jQuery" descr="Attach a handler to an event for the elements. The handler is executed at most once per element.&#x0a;&#x0a;events - A string containing one or more JavaScript event types, such as 'click' or 'submit', or custom event names.&#x0a;&#x0a;data - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler - A function to execute at the time the event is triggered.">
+				<Param name="events [" />
+				<Param name="data]" />
+				<Param name="handler" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Attach a handler to an event for the elements. The handler is executed at most once per element.&#x0a;&#x0a;events - A string containing one or more JavaScript event types, such as 'click' or 'submit', or custom event names.&#x0a;&#x0a;selector - A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or&#x0a;omitted, the event is always triggered when it reaches the selected element.&#x0a;&#x0a;data - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler - A function to execute at the time the event is triggered.">
+				<Param name="events [" />
+				<Param name="selector] [" />
+				<Param name="data]" />
+				<Param name="handler" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Attach a handler to an event for the elements. The handler is executed at most once per element.&#x0a;&#x0a;events-map - A map in which the string keys represent one or more space-separated event types and optional namespaces, and the values&#x0a;represent a handler function to be called for the event(s).&#x0a;&#x0a;selector - A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or&#x0a;omitted, the event is always triggered when it reaches the selected element.&#x0a;&#x0a;data - A map of data that will be passed to the event handler.">
+				<Param name="events [" />
+				<Param name="selector] [" />
+				<Param name="data]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="outerHeight" func="yes">
+			<Overload retVal="jQuery" descr="Get the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin.&#x0a;Returns an integer (without 'px') representation of the value or null if called on an empty set of elements.&#x0a;&#x0a;includeMargin - A Boolean indicating whether to include the element's margin in the calculation.">
+				<Param name="includeMargin" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="outerWidth" func="yes">
+			<Overload retVal="Integer" descr="Get the current computed width for the first element in the set of matched elements, including padding and border.&#x0a;&#x0a;includeMargin - A Boolean indicating whether to include the element's margin in the calculation.">
+				<Param name="includeMargin" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="param" func="yes">
+			<Overload retVal="String" descr="Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.&#x0a;&#x0a;obj - An array or object to serialize.">
+				<Param name="obj" />
+			</Overload>
+			<Overload retVal="String" descr="Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.&#x0a;&#x0a;obj - An array or object to serialize.&#x0a;&#x0a;traditional - A Boolean indicating whether to perform a traditional 'shallow' serialization.">
+				<Param name="obj" />
+				<Param name="traditional" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="parent" func="yes">
+			<Overload retVal="jQuery" descr="Get the parent of each element in the current set of matched elements, optionally filtered by a selector.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.">
+				<Param name="[selector]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="parentsUntil" func="yes">
+			<Overload retVal="jQuery" descr="Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object.&#x0a;&#x0a;selector - A string containing a selector expression to indicate where to stop matching ancestor elements.&#x0a;&#x0a;filter - A string containing a selector expression to match elements against.">
+				<Param name="selector" />
+				<Param name="filter" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object.&#x0a;&#x0a;element - A DOM node or jQuery object indicating where to stop matching ancestor elements.&#x0a;&#x0a;filter - A string containing a selector expression to match elements against.">
+				<Param name="element" />
+				<Param name="filter" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="parseJSON" func="yes">
+			<Overload retVal="Object" descr="Takes a well-formed JSON string and returns the resulting JavaScript object.&#x0a;&#x0a;json - The JSON string to parse.">
+				<Param name="json" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="parseXML" func="yes">
+			<Overload retVal="XMLDocument" descr="Parses a string into an XML document.&#x0a;&#x0a;data - A well-formed XML string to be parsed.">
+				<Param name="data" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="position" func="yes">
+			<Overload retVal="Object" descr="Get the current coordinates of the first element in the set of matched elements, relative to the offset parent.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="post" func="yes">
+			<Overload retVal="jqXHR" descr=" Load data from the server using a HTTP POST request.&#x0a;&#x0a;url - A string containing the URL to which the request is sent.&#x0a;&#x0a;data - A map or string that is sent to the server with the request.&#x0a;&#x0a;success(data, textStatus, jqXHR) - A callback function that is executed if the request succeeds.&#x0a;&#x0a;dataType - The type of data expected from the server. Default: Intelligent Guess (xml, json, script, or html).">
+				<Param name="url [" />
+				<Param name="data] [" />
+				<Param name="success(data, textStatus, jqXHR)] [" />
+				<Param name="dataType]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="prepend" func="yes">
+			<Overload retVal="jQuery" descr="Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.&#x0a;&#x0a;content - DOM element, array of elements, HTML string, or jQuery object to insert at the beginning of each element in the set of matched elements.&#x0a;&#x0a;content - One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the beginning of&#x0a;each element in the set of matched elements.">
+				<Param name="content [" />
+				<Param name="content]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.&#x0a;&#x0a;function(index, html) - A function that returns an HTML string, DOM element(s), or jQuery object to insert at the beginning of each&#x0a;element in the set of matched elements. Receives the index position of the element in the set and the old HTML&#x0a;value of the element as arguments. Within the function, this refers to the current element in the set.">
+				<Param name="function(index, html)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="prependTo" func="yes">
+			<Overload retVal="jQuery" descr="Insert every element in the set of matched elements to the beginning of the target.&#x0a;&#x0a;target - A selector, element, HTML string, or jQuery object; the matched set of elements will be inserted at the beginning of the element(s) specified by this parameter.">
+				<Param name="target" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="prev" func="yes">
+			<Overload retVal="jQuery" descr="Get the immediately preceding sibling of each element in the set of matched elements, optionally filtered by a selector.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.">
+				<Param name="[selector]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="prevAll" func="yes">
+			<Overload retVal="jQuery" descr="Get all preceding siblings of each element in the set of matched elements, optionally filtered by a selector.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.">
+				<Param name="[selector]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="prevUntil" func="yes">
+			<Overload retVal="jQuery" descr="Get all preceding siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object.&#x0a;&#x0a;selector - A string containing a selector expression to indicate where to stop matching preceding sibling elements.&#x0a;&#x0a;filter - A string containing a selector expression to match elements against.">
+				<Param name="[selector] [" />
+				<Param name="filter]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Get all preceding siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object.&#x0a;&#x0a;element - A DOM node or jQuery object indicating where to stop matching preceding sibling elements.&#x0a;&#x0a;filter - A string containing a selector expression to match elements against.">
+				<Param name="element" />
+				<Param name="filter" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="promise" func="yes">
+			<Overload retVal="Promise" descr="Return a Promise object to observe when all actions of a certain type bound to the collection, queued or not, have finished.&#x0a;&#x0a;type - The type of queue that needs to be observed.&#x0a;&#x0a;target - Object onto which the promise methods have to be attached.">
+				<Param name="type" />
+				<Param name="target" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="prop" func="yes">
+			<Overload retVal="String" descr="Get the value of a property for the first element in the set of matched elements.&#x0a;&#x0a;propertyName - The name of the property to get.">
+				<Param name="propertyName" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set one or more properties for the set of matched elements.&#x0a;&#x0a;propertyName - The name of the property to set.&#x0a;&#x0a;value - A value to set for the property.">
+				<Param name="propertyName" />
+				<Param name="value" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set one or more properties for the set of matched elements.&#x0a;&#x0a;map - A map of property-value pairs to set.">
+				<Param name="map" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set one or more properties for the set of matched elements.&#x0a;&#x0a;propertyName - The name of the property to set.&#x0a;&#x0a;function(index, oldPropertyValue) - A function returning the value to set. Receives the index position of the element in the set and&#x0a;the old property value as arguments. Within the function, the keyword this refers to the current element.">
+				<Param name="propertyName" />
+				<Param name="function(index, oldPropertyValue)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="proxy" func="yes">
+			<Overload retVal="Function" descr="Takes a function and returns a new one that will always have a particular context.&#x0a;&#x0a;function - The function whose context will be changed.&#x0a;&#x0a;context - The object to which the context (this) of the function should be set.">
+				<Param name="function" />
+				<Param name="context" />
+			</Overload>
+			<Overload retVal="Function" descr="Takes a function and returns a new one that will always have a particular context.&#x0a;&#x0a;context - The object to which the context of the function should be set.&#x0a;&#x0a;name - The name of the function whose context will be changed (should be a property of the context object).">
+				<Param name="context" />
+				<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="pushStack" func="yes">
+			<Overload retVal="jQuery" descr="Add a collection of DOM elements onto the jQuery stack.&#x0a;&#x0a;elements - An array of elements to push onto the stack and make into a new jQuery object.">
+				<Param name="elements" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Add a collection of DOM elements onto the jQuery stack.&#x0a;&#x0a;elements - An array of elements to push onto the stack and make into a new jQuery object.&#x0a;&#x0a;name - The name of a jQuery method that generated the array of elements.&#x0a;&#x0a;arguments - The arguments that were passed in to the jQuery method (for serialization).">
+				<Param name="elements" />
+				<Param name="name" />
+				<Param name="arguments" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ready" func="yes">
+			<Overload retVal="jQuery" descr="Specify a function to execute when the DOM is fully loaded.&#x0a;&#x0a;handler - A function to execute after the DOM is ready.">
+				<Param name="handler" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="remove" func="yes">
+			<Overload retVal="jQuery" descr="Remove the set of matched elements from the DOM.&#x0a;&#x0a;selector - A selector expression that filters the set of matched elements to be removed.">
+				<Param name="[selector]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="removeAttr" func="yes">
+			<Overload retVal="jQuery" descr="Remove an attribute from each element in the set of matched elements.&#x0a;&#x0a;attributeName - An attribute to remove; as of version 1.7, it can be a space-separated list of attributes.">
+				<Param name="attributeName" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="removeClass" func="yes">
+			<Overload retVal="jQuery" descr="Remove a single class, multiple classes, or all classes from each element in the set of matched elements.&#x0a;&#x0a;className - One or more space-separated classes to be removed from the class attribute of each matched element.">
+				<Param name="[className]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Remove a single class, multiple classes, or all classes from each element in the set of matched elements.&#x0a;&#x0a;function(index, class) - A function returning one or more space-separated class names to be removed. Receives the index position of&#x0a;the element in the set and the old class value as arguments.">
+				<Param name="function(index, class)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="removeProp" func="yes">
+			<Overload retVal="jQuery" descr="Remove a property for the set of matched elements.&#x0a;&#x0a;propertyName - The name of the property to set.">
+				<Param name="propertyName" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="replaceAll" func="yes">
+			<Overload retVal="jQuery" descr="Replace each target element with the set of matched elements.&#x0a;&#x0a;target - A selector expression indicating which element(s) to replace.">
+				<Param name="target" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="replaceWith" func="yes">
+			<Overload retVal="jQuery" descr="Replace each element in the set of matched elements with the provided new content.&#x0a;&#x0a;newContent - The content to insert. May be an HTML string, DOM element, or jQuery object.">
+				<Param name="newContent" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Replace each element in the set of matched elements with the provided new content.&#x0a;&#x0a;function - A function that returns content with which to replace the set of matched elements.">
+				<Param name="function" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="resize" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'resize' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'resize' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'resize' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="scroll" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'scroll' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'scroll' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'scroll' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="scrollLeft" func="yes">
+			<Overload retVal="Integer" descr="Get the current horizontal position of the scroll bar for the first element in the set of matched elements.">
+				<Param name="" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set the current horizontal position of the scroll bar for each of the set of matched elements.&#x0a;&#x0a;value - An integer indicating the new position to set the scroll bar to.">
+				<Param name="value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="scrollTop" func="yes">
+			<Overload retVal="Integer" descr="Get the current vertical position of the scroll bar for the first element in the set of matched elements.">
+				<Param name="" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set the current vertical position of the scroll bar for each of the set of matched elements.&#x0a;&#x0a;value - An integer indicating the new position to set the scroll bar to.">
+				<Param name="value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="select" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'select' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'select' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'select' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="serialize" func="yes">
+			<Overload retVal="String" descr="Encode a set of form elements as a string for submission.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="serializeArray" func="yes">
+			<Overload retVal="Array" descr="Encode a set of form elements as an array of names and values.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="show" func="yes">
+			<Overload retVal="jQuery" descr="Display the matched elements.">
+				<Param name="" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Display the matched elements.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="duration [" />
+				<Param name="callback]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Display the matched elements.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;easing - A string indicating which easing function to use for the transition.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="duration [" />
+				<Param name="easing] [" />
+				<Param name="callback]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="siblings" func="yes">
+			<Overload retVal="jQuery" descr="Get the siblings of each element in the set of matched elements, optionally filtered by a selector.&#x0a;&#x0a;selector - A string containing a selector expression to match elements against.">
+				<Param name="[selector]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="size" func="yes">
+			<Overload retVal="Number" descr="Return the number of elements in the jQuery object.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="slice" func="yes">
+			<Overload retVal="jQuery" descr="Reduce the set of matched elements to a subset specified by a range of indices.&#x0a;&#x0a;start - An integer indicating the 0-based position at which the elements begin to be selected. If negative, it indicates&#x0a;an offset from the end of the set.&#x0a;&#x0a;end - An integer indicating the 0-based position at which the elements begin to be selected. If negative, it indicates&#x0a;an offset from the end of the set.">
+				<Param name="start [" />
+				<Param name="end]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="slideDown" func="yes">
+			<Overload retVal="jQuery" descr="Display the matched elements with a sliding motion.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="[duration] [" />
+				<Param name="callback]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Display the matched elements with a sliding motion.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;easing - A string indicating which easing function to use for the transition.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="[duration] [" />
+				<Param name="easing] [" />
+				<Param name="callback]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="slideToggle" func="yes">
+			<Overload retVal="jQuery" descr="Display or hide the matched elements with a sliding motion.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="[duration] [" />
+				<Param name="callback]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Display or hide the matched elements with a sliding motion.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;easing - A string indicating which easing function to use for the transition.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="[duration] [" />
+				<Param name="easing] [" />
+				<Param name="callback]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="slideUp" func="yes">
+			<Overload retVal="jQuery" descr="Hide the matched elements with a sliding motion.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="[duration] [" />
+				<Param name="callback]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Hide the matched elements with a sliding motion.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;easing - A string indicating which easing function to use for the transition.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="[duration] [" />
+				<Param name="easing] [" />
+				<Param name="callback]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="stop" func="yes">
+			<Overload retVal="jQuery" descr="Stop the currently-running animation on the matched elements.&#x0a;&#x0a;clearQueue - A Boolean indicating whether to remove queued animation as well. Defaults to false.&#x0a;&#x0a;jumpToEnd - A Boolean indicating whether to complete the current animation immediately. Defaults to false.">
+				<Param name="[clearQueue] [" />
+				<Param name="jumpToEnd]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Stop the currently-running animation on the matched elements.&#x0a;&#x0a; queue - The name of the queue in which to stop animations.&#x0a;&#x0a;clearQueue - A Boolean indicating whether to remove queued animation as well. Defaults to false.&#x0a;&#x0a;jumpToEnd - A Boolean indicating whether to complete the current animation immediately. Defaults to false.">
+				<Param name="[clearQueue] [" />
+				<Param name="jumpToEnd]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sub" func="yes">
+			<Overload retVal="jQuery" descr="Creates a new copy of jQuery whose properties and methods can be modified without affecting the original jQuery object.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="submit" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'submit' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'submit' JavaScript event, or trigger that event on an element.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="eventData" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'submit' JavaScript event, or trigger that event on an element.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="support" />
+		<KeyWord name="text" func="yes">
+			<Overload retVal="String" descr="Get the combined text contents of each element in the set of matched elements, including their descendants.">
+				<Param name="" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set the content of each element in the set of matched elements to the specified text.&#x0a;textString - A string of text to set as the content of each matched element.">
+				<Param name="textString" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set the content of each element in the set of matched elements to the specified text.&#x0a;function(index, text) - A function returning the text content to set. Receives the index position of the element in the set and the old text value as arguments.">
+				<Param name="textString" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toArray" func="yes">
+			<Overload retVal="Array" descr="Retrieve all the DOM elements contained in the jQuery set, as an array.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toggle" func="yes">
+			<Overload retVal="jQuery" descr="Display or hide the matched elements.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="[duration] [" />
+				<Param name="callback]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Display or hide the matched elements.&#x0a;&#x0a;duration - A string or number determining how long the animation will run.&#x0a;&#x0a;easing - A string indicating which easing function to use for the transition.&#x0a;&#x0a;callback - A function to call once the animation is complete.">
+				<Param name="[duration] [" />
+				<Param name="easing] [" />
+				<Param name="callback]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Display or hide the matched elements.&#x0a;&#x0a;showOrHide - A Boolean indicating whether to show or hide the elements.">
+				<Param name="showOrHide" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind two or more handlers to the matched elements, to be executed on alternate clicks.&#x0a;&#x0a;handler(eventObject) - A function to execute every even time the element is clicked.&#x0a;&#x0a;handler(eventObject) - A function to execute every odd time the element is clicked.&#x0a;&#x0a;handler(eventObject) - Additional handlers to cycle through after clicks.">
+				<Param name="handler(eventObject)" />
+				<Param name="handler(eventObject) [" />
+				<Param name="handler(eventObject)]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toggleClass" func="yes">
+			<Overload retVal="jQuery" descr="Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.&#x0a;&#x0a;className - One or more class names (separated by spaces) to be toggled for each element in the matched set.">
+				<Param name="className" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.&#x0a;&#x0a;className - One or more class names (separated by spaces) to be toggled for each element in the matched set.&#x0a;&#x0a;switch - A Boolean (not just truthy/falsy) value to determine whether the class should be added or removed.">
+				<Param name="className" />
+				<Param name="switch" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.&#x0a;&#x0a;switch - A boolean value to determine whether the class should be added or removed.">
+				<Param name="[switch]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.&#x0a;&#x0a;function(index, class, switch) - A function that returns class names to be toggled in the class attribute of each element in the matched set. Receives the index position of the element in the set, the old class value, and the switch as arguments.&#x0a;&#x0a;switch - A boolean value to determine whether the class should be added or removed.">
+				<Param name="function(index, class, switch) [" />
+				<Param name="switch]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trigger" func="yes">
+			<Overload retVal="jQuery" descr="Execute all handlers and behaviors attached to the matched elements for the given event type.&#x0a;&#x0a;eventType - A string containing a JavaScript event type, such as click or submit.&#x0a;&#x0a;extraParameters - Additional parameters to pass along to the event handler.">
+				<Param name="eventType" />
+				<Param name="extraParameters" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Execute all handlers and behaviors attached to the matched elements for the given event type.&#x0a;&#x0a;event - A jQuery.Event object">
+				<Param name="event" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="triggerHandler" func="yes">
+			<Overload retVal="Object" descr="Execute all handlers attached to an element for an event.&#x0a;&#x0a;eventType - A string containing a JavaScript event type, such as click or submit.&#x0a;&#x0a;extraParameters - An array of additional parameters to pass along to the event handler.">
+				<Param name="eventType" />
+				<Param name="extraParameters" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="trim" func="yes">
+			<Overload retVal="String" descr="Remove the whitespace from the beginning and end of a string.&#x0a;&#x0a;str - The string to trim.">
+				<Param name="str" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="type" func="yes">
+			<Overload retVal="String" descr="Determine the internal JavaScript [[Class]] of an object.&#x0a;&#x0a;obj - Object to get the internal JavaScript [[Class]] of.">
+				<Param name="obj" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="unbind" func="yes">
+			<Overload retVal="jQuery" descr="Remove a previously-attached event handler from the elements.&#x0a;&#x0a;eventType - A string containing a JavaScript event type, such as click or submit.&#x0a;&#x0a;handler(eventObject) - The function that is to be no longer executed.">
+				<Param name="[eventType] [" />
+				<Param name="handler(eventObject)]" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Remove a previously-attached event handler from the elements.&#x0a;&#x0a;eventType - A string containing a JavaScript event type, such as click or submit.&#x0a;&#x0a;false - Unbinds the corresponding 'return false' function that was bound using .bind( eventType, false ).">
+				<Param name="eventType" />
+				<Param name="false" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Remove a previously-attached event handler from the elements.&#x0a;&#x0a;event - A JavaScript event object as passed to an event handler.">
+				<Param name="event" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="undelegate" func="yes">
+			<Overload retVal="jQuery" descr="Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.">
+				<Param name="" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.&#x0a;&#x0a;selector - A selector which will be used to filter the event results.&#x0a;&#x0a;eventType - A string containing a JavaScript event type, such as 'click' or 'keydown'">
+				<Param name="selector" />
+				<Param name="eventType" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.&#x0a;&#x0a;selector - A selector which will be used to filter the event results.&#x0a;&#x0a;eventType - A string containing a JavaScript event type, such as 'click' or 'keydown'&#x0a;&#x0a;handler - A function to execute at the time the event is triggered.">
+				<Param name="selector" />
+				<Param name="eventType" />
+				<Param name="handler" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.&#x0a;&#x0a;selector - A selector which will be used to filter the event results.&#x0a;&#x0a;events - A map of one or more event types and previously bound functions to unbind from them.">
+				<Param name="selector" />
+				<Param name="events" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.&#x0a;&#x0a;namespace - A string containing a namespace to unbind all events from.">
+				<Param name="namespace" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="unique" func="yes">
+			<Overload retVal="Array" descr="Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers.&#x0a;&#x0a;array - The Array of DOM elements.">
+				<Param name="array" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="unload" func="yes">
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'unload' JavaScript event.&#x0a;&#x0a;handler(eventObject) - A function to execute when the event is triggered.">
+				<Param name="handler(eventObject)" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Bind an event handler to the 'unload' JavaScript event.&#x0a;&#x0a;eventData - A map of data that will be passed to the event handler.&#x0a;&#x0a;handler(eventObject) - A function to execute each time the event is triggered.">
+				<Param name="[eventData]" />
+				<Param name="handler(eventObject)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="unwrap" func="yes">
+			<Overload retVal="jQuery" descr="Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place.">
+				<Param name="" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="val" func="yes">
+			<Overload retVal="String, Number, Array" descr="Get the current value of the first element in the set of matched elements.">
+				<Param name="" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set the value of each element in the set of matched elements.&#x0a;value - A string of text or an array of strings corresponding to the value of each matched element to set as selected/checked.">
+				<Param name="value" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set the value of each element in the set of matched elements.&#x0a;function(index, value) - A function returning the value to set. this is the current element. Receives the index position of the element in the set and the old value as arguments.">
+				<Param name="function(index, value)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="when" func="yes">
+			<Overload retVal="Promise" descr="Provides a way to execute callback functions based on one or more objects, usually Deferred objects that represent asynchronous events.&#x0a;&#x0a;deferreds - One or more Deferred objects, or plain JavaScript objects.">
+				<Param name="deferreds" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="width" func="yes">
+			<Overload retVal="Integer" descr="Get the current computed width for the first element in the set of matched elements.">
+				<Param name="" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set the CSS width of each element in the set of matched elements.&#x0a;&#x0a;value - An integer representing the number of pixels, or an integer along with an optional unit of measure appended (as a string).">
+				<Param name="value" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Set the CSS width of each element in the set of matched elements.&#x0a;&#x0a;function(index, width) - A function returning the width to set. Receives the index position of the element in the set and the old width as arguments. Within the function, this refers to the current element in the set.">
+				<Param name="function(index, width)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="wrap" func="yes">
+			<Overload retVal="jQuery" descr="Wrap an HTML structure around each element in the set of matched elements.&#x0a;&#x0a;wrappingElement - An HTML snippet, selector expression, jQuery object, or DOM element specifying the structure to wrap around the matched elements.">
+				<Param name="wrappingElement" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Wrap an HTML structure around each element in the set of matched elements.&#x0a;&#x0a;function(index) - A callback function returning the HTML content or jQuery object to wrap around the matched elements. Receives the index position of the element in the set as an argument. Within the function, this refers to the current element in the set.">
+				<Param name="function(index)" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="wrapAll" func="yes">
+			<Overload retVal="jQuery" descr="Wrap an HTML structure around all elements in the set of matched elements.&#x0a;&#x0a;wrappingElement - An HTML snippet, selector expression, jQuery object, or DOM element specifying the structure to wrap around the matched elements.">
+				<Param name="wrappingElement" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="wrapInner" func="yes">
+			<Overload retVal="jQuery" descr="Wrap an HTML structure around the content of each element in the set of matched elements.&#x0a;&#x0a;wrappingElement - An HTML snippet, selector expression, jQuery object, or DOM element specifying the structure to wrap around the content of the matched elements.">
+				<Param name="wrappingElement" />
+			</Overload>
+			<Overload retVal="jQuery" descr="Wrap an HTML structure around the content of each element in the set of matched elements.&#x0a;&#x0a;function(index) - A callback function which generates a structure to wrap around the content of the matched elements. Receives the index position of the element in the set as an argument. Within the function, this refers to the current element in the set.">
+				<Param name="function(index)" />
+			</Overload>
+		</KeyWord>
+	</AutoComplete>
+</NotepadPlus>
