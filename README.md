@@ -4,8 +4,8 @@ This project consists of user-defined language files for the <a href="http://not
 
 <h2>Screenshots</h2>
 
-<img src="http://www.jamesallardice.com/wp-content/uploads/2011/11/nppp-jq-1.jpg" alt="jQuery autocompletion" />
-<img src="http://www.jamesallardice.com/wp-content/uploads/2011/11/nppp-jq-21.jpg" alt="jQuery code hinting" />
+<img src="http://www.jamesallardice.com/assets/images/posts/notepadplusplusjquery1.jpg" alt="jQuery autocompletion" />
+<img src="http://www.jamesallardice.com/assets/images/posts/notepadplusplusjquery2.jpg" alt="jQuery code hinting" />
 
 <h2>Installation</h2>
 
